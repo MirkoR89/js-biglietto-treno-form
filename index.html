@@ -15,31 +15,36 @@
 
   <main>
     <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-    <section id="ticket_generator" class="d-flex">
-      <div class="user_details">
-        <label for="user_name">Nome Cognome</label>
-        <input type="text" name="userName" id="user_name">
+    <section id="ticket_generator" class="d-flex flex-column">
+      <div class="label d-flex flex-around">
+        <div class="user_details d-flex flex-column flex-around">
+          <label for="user_name">Nome Cognome</label>
+          <input type="text" name="userName" id="user_name">
+        </div>
+
+        <div class="user_details d-flex flex-column flex-around">
+          <label for="km">Km da percorrere</label>
+          <input type="number" name="km" id="km">
+        </div>
+
+        <div class="user_details d-flex flex-column flex-around">
+          <label for="age">Fascia d'età</label>
+          <select name="age" id="range_age">
+            <option value="under18">Minorenne</option>
+            <option value="adult">Maggiorenne</option>
+            <option value="over65">Over 65</option>
+          </select>
+        </div>
       </div>
 
-      <div class="user_details">
-        <label for="km">Km da percorrere</label>
-        <input type="number" name="km" id="km">
-      </div>
-
-      <div class="user_details">
-        <label for="age">Fascia d'età</label>
-        <select name="age" id="range_age">
-          <option value="under18">Minorenne</option>
-          <option value="adult">Maggiorenne</option>
-          <option value="over65">Over 65</option>
-        </select>
+      <div class="buttons d-flex flex-around">
+        <div class="user_details d-flex flex-around">
+          <button id="btn_generator">Genera</button>
+          <button id="btn_cancel">Annulla</button>
+        </div>
       </div>
 
 
-      <div class="user_details">
-        <button id="btn_generator">Genera</button>
-        <button id="btn_cancel">Annulla</button>
-      </div>
     </section>
 
     <section id="ticket">
