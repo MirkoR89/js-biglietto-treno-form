@@ -33,7 +33,7 @@ btnGenerator.addEventListener("click", function () {
   document.getElementById("offert").innerHTML = "Prezzo Standard";
   document.getElementById("carriage").innerHTML = numberCarriage;
   document.getElementById("cp_code").innerHTML = cpCode;
-  document.getElementById("price_ticket").innerHTML = priceTicket.toFixed(2);
+  document.getElementById("price_ticket").innerHTML = priceTicket.toFixed(2) + " " + "&euro;";
 
   if (rangeAge == "under18") {
     document.getElementById("offert").innerHTML = "Sconto Minorenni";
