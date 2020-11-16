@@ -56,6 +56,14 @@ body {
   width: 80%;
   height: 150px;
   margin: auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px black;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: white;
 }
 
 .label, .buttons {
@@ -68,3 +76,10 @@ body {
   height: auto;
   margin: auto;
 }
+
+.label {
+  color: #B91450;
+  text-align: center;
+}
+
+/* Section Ticket*/
